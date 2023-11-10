@@ -4,7 +4,7 @@ from openai import OpenAI
 
 
 client = OpenAI()
-def flash_create(prompt):
+def flash_create(prompt: str):
 
   
   completion = client.chat.completions.create(

@@ -1,7 +1,8 @@
-from chatGPT import flash_create
+from website import create_app
 
-prompt = "Object inheritance in Java is where an object inherits methods and attributes from it's super class"
 
-flashcard = flash_create(prompt)
-for f in flashcard:
-  print(f)
+app = create_app()
+
+if __name__ == '__main__':
+  app.run(host="0.0.0.0",debug=True)
+
