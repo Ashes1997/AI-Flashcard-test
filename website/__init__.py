@@ -21,7 +21,7 @@ def create_app():
 
     from .dbmodels import User, Note, Flashcard
 
-    if not path.exists('website/' + DB_NAME):
+    if not path.exists('instance/' + DB_NAME):
       with app.app_context():
         db.create_all()
 
